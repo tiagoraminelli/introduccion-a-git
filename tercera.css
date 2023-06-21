@@ -21,16 +21,9 @@ body {
 
 header {
 	width: 100%;
-	height: 350px;
+	height: 900px;
 	background-color: transparent;
-	position: relative;
-	/* vamos a utlizar una imagen como fondo en el header y no en el HTML   */
-	background-image: url(img/screen.jpg);
-	background-position: center center; /* centrada en coordenadas verticales y horizontales -- puedo desplazar right, left, button */
-	background-size: cover; /* fuerza a la imagen a cubrir el total del contenedor -- opciones contain, initial, lenght  */
-	background-repeat: no-repeat;  /* no repite la imagen, por las dudas la imagen no llegue a cubrir el tamaño total del contenedor  */
-									/* opciones repeat-x, repeat-y, repeat  */
-	background-attachment: fixed;  /*  el fondo queda fijo cuando hago el scroll de la página        */
+	
 	
 
 }
