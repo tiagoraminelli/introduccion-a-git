@@ -1,0 +1,213 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+    font-family: 'MuseoModerno', cursive;  
+    background-color: #ffcac2;
+	
+
+}
+
+#relleno{
+    width: 100%;
+    height: 58px;
+    background-color: red;
+}
+
+
+header {
+	width: 100%;
+	height: 350px;
+	background-color: transparent;
+	position: relative;
+	/* vamos a utlizar una imagen como fondo en el header y no en el HTML   */
+	background-image: url(img/screen.jpg);
+	background-position: center center; /* centrada en coordenadas verticales y horizontales -- puedo desplazar right, left, button */
+	background-size: cover; /* fuerza a la imagen a cubrir el total del contenedor -- opciones contain, initial, lenght  */
+	background-repeat: no-repeat;  /* no repite la imagen, por las dudas la imagen no llegue a cubrir el tamaño total del contenedor  */
+									/* opciones repeat-x, repeat-y, repeat  */
+	background-attachment: fixed;  /*  el fondo queda fijo cuando hago el scroll de la página        */
+	
+
+}
+
+.medio{
+    
+    width: 100%;
+    height: 350px;
+	background-color: transparent;
+	position: relative;
+	/* vamos a utlizar una imagen como fondo en el header y no en el HTML   */
+	background-image: url(img/person.jpg);
+	background-position: center center; /* centrada en coordenadas verticales y horizontales -- puedo desplazar right, left, button */
+	background-size: cover; /* fuerza a la imagen a cubrir el total del contenedor -- opciones contain, initial, lenght  */
+	background-repeat: no-repeat;  /* no repite la imagen, por las dudas la imagen no llegue a cubrir el tamaño total del contenedor  */
+									/* opciones repeat-x, repeat-y, repeat  */
+    background-attachment: fixed;  /*  el fondo queda fijo cuando hago el scroll de la página        */
+    margin-bottom: 10px;
+    box-sizing: content-box;
+}
+
+#placa{
+    width: 100%;
+    height: 100px;
+    top: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+} 
+
+#tele{
+    width: 100%;
+    height: 100px;
+    top: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+
+} 
+
+
+h1{
+    font-family: 'MuseoModerno', cursive; 
+    font-size: 42px;
+    color: #fff;
+
+    margin: 20px 0 auto;
+} 
+
+.cuerpo{
+    width: 90%;
+} 
+
+section {
+
+	padding: 15px 5px 0 5px;
+	margin: auto;
+	text-align: justify;
+}
+
+
+p {
+	margin: 16px 0;
+	line-height: 150%;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+	background-color: #ccafaf;
+	color: white;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+nav{
+	width: 100%;
+	background-color: #900c3f;
+	color: white;
+	
+	position: fixed;
+	z-index: 1000;
+
+}
+
+nav li{
+		
+		/*propiedad que permite que las viñetas se se mostren en linea y no una debajo de la otra */
+		display: inline-block;
+		/*sacamos el punto que esta delante de cada items en la lista */
+		list-style: none;
+		/* le damos un relleno */
+		padding: 5px;
+	
+
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #fc9d9d;
+}
+
+nav ul li:first-child {
+  background: #fc9d9d;
+}
+
+
+
+.listita{
+    padding-left: 30px;
+    list-style-type: circle ;
+}
+
+
+/* Formulario*/
+
+.formulario{
+        
+        width: 80%;
+		margin: 50px auto;
+		padding: 15px;
+		border: 1px solid #900c3f;
+        background:  #900c3f;
+        color: white;
+
+}
+
+input, textarea {
+    font-family: 'MuseoModerno', cursive;  
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px; 
+    border: 1px solid #ccc;
+    
+    box-sizing: border-box;
+    
+}
+
+
+
+.guardar {
+    font-family: 'MuseoModerno', cursive;  
+    width: 100%;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.guardar:hover{
+    background-color: #044906 ;
+}
+
+.cancelar {
+    font-family: 'MuseoModerno', cursive;  
+    width: 100%;
+    font-size: 16px;
+    background-color: #fc9d9d;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.cancelar:hover{
+    background-color: #fd5959;
+}
